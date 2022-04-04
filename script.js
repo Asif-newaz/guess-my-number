@@ -9,10 +9,11 @@
 // console.log(document.querySelector(".message").textContent);
 // console.log((document.querySelector(".guess").value = "10"));
 
-function x() {
-  console.log(23);
-}
-
 document.querySelector(".check").addEventListener("click", function () {
-  console.log(document.querySelector(".guess").value);
+  const guess = Number(document.querySelector(".guess").value);
+  console.log(guess, typeof guess);
+
+  if (!guess) {
+    document.querySelector(".message").textContent = "⛔️ No number";
+  }
 });
