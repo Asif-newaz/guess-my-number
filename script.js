@@ -9,6 +9,10 @@
 // console.log(document.querySelector(".message").textContent);
 // console.log((document.querySelector(".guess").value = "10"));
 
+function x() {
+  console.log(23);
+}
+
 document.querySelector(".check").addEventListener("click", function () {
   console.log(document.querySelector(".guess").value);
 });
