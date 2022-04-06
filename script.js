@@ -9,6 +9,10 @@
 // console.log(document.querySelector(".message").textContent);
 // console.log((document.querySelector(".guess").value = "10"));
 
+const number = Math.trunc(Math.random() * 20) + 1;
+
+console.log(number);
+
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
